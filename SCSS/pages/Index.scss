@@ -1,0 +1,247 @@
+// Glasses 官網首頁
+
+.mr-98 {
+    margin-right: 98px;
+}
+
+.section-title-pt {
+    padding-top: 64px;
+}
+
+@mixin section-title {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+@mixin contact-input {
+    display: inline-block;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+// Promise-Desert 2020 早春系列
+.index-header {
+    height: 85vh;
+    background: url(https://images.unsplash.com/photo-1496223868326-ca6e535cf8db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80) no-repeat center center;
+    background-size: cover;
+}
+.header-title-wrap {
+    color: $primary-dark;
+    font-weight: 600;
+    text-align: right;
+    p {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 64px;
+    }
+}
+
+
+// 用專業的心，做專業的事
+.features-wrap {
+    background: $background;
+    padding-bottom: 80px;
+}
+.features-title {
+    @include section-title;
+}
+.feature-item {
+    .feature-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+}
+.feature-item-r {
+    margin-right: 98px;
+}
+
+
+// 經典系列鏡框
+.classic-frame-wrap {
+    padding-bottom: 80px;
+}
+.classic-frame-title {
+    @include section-title;
+}
+.classic-frame-img {
+    width: 66%;
+    height: 320px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
+}
+.classic-frame-name {
+    color: $primary;
+    font-size: 48px;
+    font-weight: bold;
+    img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
+// 聯名設計鏡框
+.co-branding-m {
+    margin-left: -170px;
+    margin-right: -170px;
+}
+.co-branding-title {
+    @include section-title;
+}
+// --- 有 MORE 那層
+.gallery-wrap {
+    padding-bottom: 80px;
+}
+.gallery-item-main {
+    height: 840px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.gallery-item-second {
+    height: 454px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.gallery-item-third {
+    .gallery-item-third-1 {
+        width: 132px;
+        height: 378px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gallery-item-third-2 {
+        .gallery-item-third-2-1 {
+            width: 818px;
+            height: 203px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// --- Double A+ YOUTH
+.co-branding-series-wrap {
+    height: 592px;
+    margin-bottom: 144px;
+    li {
+        position: relative;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    li:nth-child(1) {
+        background: url(https://images.unsplash.com/photo-1586653114161-f9b64e4410b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=780&q=80) no-repeat center center;
+        background-size: cover;
+    }
+    li:nth-child(2) {
+        background: url(https://images.unsplash.com/photo-1561403377-225fcbc5f970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=833&q=80) no-repeat center center;
+        background-size: cover;
+    }
+    .series-name {
+        font-size: 72px;
+        font-weight: bold;
+        z-index: 5;
+    }
+}
+
+// --- 顧客推薦
+.customers-recommend {
+    padding-bottom: 80px;
+}
+.customers-recommend-title {
+    @include section-title;
+}
+.customer-info {
+    padding: 16px;
+    border: 1px solid #DEE2E6;
+    p:nth-child(1) {
+        font-weight: 600;
+    }
+    .cardTime {
+        color: #707070;
+    }
+}
+
+
+// 聯絡我們
+.contact-wrap-m {
+    padding: 0 204px;
+}
+.contact-wrap {
+    background: $background;
+    padding-bottom: 92px;
+}
+.contact-title {
+    @include section-title;
+}
+.contact-des {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    font-weight: bold;
+    input[type=text] {
+        @include contact-input;
+        margin-top: 4px;
+    }
+    textarea {
+        @include contact-input;
+        height: 136px;
+        margin-top: 4px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label::before {
+        content: '';
+        @include contact-input;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin-right: 4px;
+    }
+    input[type=submit] {
+        width: 180px;
+        padding: 16px 58px;
+        background: $primary;
+        color: #ffffff;
+        border: none;
+        margin-top: 42px;
+    }
+}

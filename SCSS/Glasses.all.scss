@@ -1,0 +1,13 @@
+@import './base/reset';
+@import './base/base';
+
+@import './utils/variables';
+@import './utils/screenSet';
+@import './utils/utilities';
+
+@import './components/nav';
+@import './components/footer';
+
+@import './pages/Index';
+@import './pages/FAQ';
+@import './pages/Product';

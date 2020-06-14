@@ -1,0 +1,95 @@
+// utilities
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+
+//------ flex 相關 ------
+.d-f {
+    display: flex;
+}
+.fxd-c {
+    flex-direction: column;
+}
+.fxd-rr {
+    flex-direction: row-reverse;
+}
+.flex-1 {
+    flex: 1;
+}
+.fxw-w {
+    flex-wrap: wrap;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-fe {
+    justify-content: flex-end;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+.ai-fe {
+    align-items: flex-end;
+}
+
+//------ margin 相關 ------
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-24 {
+    margin-right: 24px;
+}
+.mr-32 {
+    margin-right: 32px;
+}
+.mr-48 {
+    margin-right: 48px;
+}
+.mr-64 {
+    margin-right: 64px;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mx-24 {
+    margin: 0 24px;
+}
+
+//------ padding 相關 ------
+.px-12 {
+    padding: 0 12px;
+    @include screen-lg {
+        padding: 0;
+    }
+    @include screen-md {
+        padding: 0 12px;
+    }
+}
+
+//------ color 設定相關 ------
+.primary {
+    color: $primary;
+}
+.primary-dark {
+    color: $primary-dark;
+}

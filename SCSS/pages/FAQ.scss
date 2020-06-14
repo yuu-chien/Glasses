@@ -1,0 +1,75 @@
+// Glasses 常見問題
+.faq-bg {
+    height: 304px;
+    background: url(https://images.unsplash.com/photo-1587929373464-d5b6ddc340b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1928&q=80) no-repeat center center;
+    background-size: cover;
+    .faq-title-wrap {
+        @include screen-lg {
+            padding: 88px 48px 0 48px;
+        }
+        @include screen-sm {
+            padding: 24px 12px;
+        }
+        h2 {
+            font-size: 64px;
+            font-weight: 600;
+            @include screen-lg {
+                font-size: 48px;
+            }
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            @include screen-lg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+}
+
+
+.qa-wrap {
+    height: 100%;
+    padding-top: 88px;
+    margin-bottom: 156px;
+    @include screen-lg {
+        padding: 0 48px;
+    }
+    @include screen-sm {
+        padding: 24px 12px;
+    }
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        @include screen-lg {
+            font-size: 28px;
+            margin: 0;
+            margin: 32px 0;
+        }
+    }
+    .qa-item {
+        h4 {
+            padding: 22px 38px;
+            font-size: 20px;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+        p {
+            display: none;
+            padding: 22px 38px;
+            font-size: 16px;
+            border: 1px solid #aaa;
+            background-color: #F2F2F2;
+        }
+    }
+}
+
+footer {
+    @include screen-md {
+        padding: 40px 48px;
+    }
+    @include screen-sm {
+        padding: 24px 12px;
+    }
+}

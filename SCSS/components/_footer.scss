@@ -1,0 +1,116 @@
+.footer-container-px-19 {
+    padding: 0 19px;
+    @include screen-lg {
+        padding: 0;
+    }
+}
+
+
+footer {
+    padding: 48px 0 28px 0;
+    background-color: $primary;
+    color: #fff;
+    @include screen-lg {
+        padding: 40px 48px;
+    }
+    @include screen-md {
+        padding: 40px 12px;
+    }
+    h3 {
+        font-size: 36px;
+        font-weight: 400;
+        @include screen-lg {
+            font-size: 20px;
+        }
+    }
+    h5 {
+        font-weight: 300;
+    }
+    .footer-nav {
+        margin-bottom: 32px;
+        @include screen-md {
+            display: none;
+        }
+    }
+    .footer-nav a {
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        @include screen-lg {
+            font-size: 16px;
+        }
+    }
+    .sns-img {
+        @include screen-lg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .connect-img {
+        width: 48px;
+        height: 48px;
+        @include screen-lg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .tel {
+        display: flex;
+        justify-content: space-between;
+        .mobile-sns-wrap {
+            display: none;
+            @include screen-md {
+                display: flex;
+                align-items: center;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+                margin-left: 24px;
+            }
+        }
+    }
+    .email {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #fff;
+    }
+    .copyright {
+        margin-top: 24px;
+        @include screen-sm {
+            display: block;
+            position: relative;
+        }
+        .copyright-list {
+            @include screen-sm {
+                
+            }
+            img {
+                @include screen-lg {
+                    display: none;
+                }
+                @include screen-sm {
+                    display: block;
+                    position: absolute;
+                    margin: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .privacy-list {
+            @include screen-sm {
+                display: block;
+            }
+            li {
+                font-weight: 300;
+                @include screen-lg {
+                    font-size: 14px;
+                }
+                @include screen-sm {
+                    margin: 0;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
